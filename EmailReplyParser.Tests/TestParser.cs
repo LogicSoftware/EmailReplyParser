@@ -30,6 +30,7 @@ namespace EmailReplyParser.Tests
         [InlineData("email_1_8.txt")]
         [InlineData("email_2_1.txt")]
         [InlineData("email_2_2.txt")]
+        [InlineData("email_2_3.txt")]
         [InlineData("email_BlackBerry.txt")]
         [InlineData("email_bullets.txt")]
         [InlineData("email_iPhone.txt")]
