@@ -16,4 +16,4 @@ COPY . .
 
 WORKDIR /src/$projname
 RUN dotnet pack /p:PackageVersion=$packageversion -o packages
-RUN dotnet nuget push packages/$projname.$packageversion.nupkg -k $key -s $nugetserver
+RUN dotnet nuget push packages/LogicSoftware.EmailReplyParser.$packageversion.nupkg -k $key -s $nugetserver
