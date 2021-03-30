@@ -33,6 +33,7 @@ pool:
 stages:
 - template: /Deployment.Azure/Templates/Microservices.NugetPush.yml@OPS
   parameters:
+    buildContext: ''
     BuildNumber: 1.0.$(Build.BuildId)
     DockerfilePath: ${{ variables.ClientFolder}}/Dockerfile
     NugetKey: ${{ variables.NugetKey }}
